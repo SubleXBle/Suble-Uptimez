@@ -1,4 +1,8 @@
 // Datei: tracking.php
+// -------------------------------------------------------------
+// Das Tracking-Modul einbinden
+// include_once plugin_dir_path(__FILE__) . 'tracking.php';
+// --------------------------------------------------------------
 
 function suble_pluginz_track_installation() {
     suble_pluginz_send_tracking_event("Plugin Installiert");
