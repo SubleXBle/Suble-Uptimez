@@ -5,12 +5,12 @@
 // --------------------------------------------------------------
 
 function suble_pluginz_track_installation() {
-    suble_pluginz_send_tracking_event("Plugin Installiert");
+    suble_pluginz_send_tracking_event("Uptimez Installiert");
 }
 register_activation_hook(__FILE__, 'suble_pluginz_track_installation');
 
 function suble_pluginz_track_uninstall() {
-    suble_pluginz_send_tracking_event("Plugin Deinstalliert");
+    suble_pluginz_send_tracking_event("Uptimez Deinstalliert");
 }
 register_uninstall_hook(__FILE__, 'suble_pluginz_track_uninstall');
 
@@ -20,7 +20,7 @@ function suble_pluginz_track_update($upgrader_object, $options) {
 
         foreach ($options['plugins'] as $plugin) {
             if ($plugin === $plugin_basename) {
-                suble_pluginz_send_tracking_event("Plugin Aktualisiert");
+                suble_pluginz_send_tracking_event("Uptimez Aktualisiert");
             }
         }
     }
