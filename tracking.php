@@ -36,7 +36,7 @@ function suble_pluginz_send_tracking_event($action) {
     $matomo_url = "https://dein-matomo-server.com/matomo.php?idsite=10&rec=1";
     $matomo_url .= "&action_name=" . urlencode($action);
     $matomo_url .= "&url=" . urlencode($site_url);
-    $matomo_url .= "&e_c=Plugin&token_auth=DEIN_TOKEN";
+   // $matomo_url .= "&e_c=Plugin&token_auth=DEIN_TOKEN";
 
     wp_remote_get($matomo_url);
 }
