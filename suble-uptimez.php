@@ -36,7 +36,7 @@ function suble_uptimez_admin_page() {
     ?>
     <div class="wrap">
         <h1>Suble Uptimez Einstellungen</h1>
-
+        <p>Binde den Shortcode <code>[suble_uptimez_monitors]</code> ein um die Monitore anzuzeigen</p>
         <form method="post" action="options.php">
             <?php
             settings_fields( 'suble_uptimez_options_group' );
