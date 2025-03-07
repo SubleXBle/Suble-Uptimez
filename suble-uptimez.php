@@ -199,7 +199,7 @@ $updateChecker = PucFactory::buildUpdateChecker(
 $updateChecker->setBranch('latest');
 
 // Icon für Plugin einfügen
-function suble_greetz_set_plugin_icon($plugin_data, $plugin_file) {
+function suble_uptimez_set_plugin_icon($plugin_data, $plugin_file) {
     if ($plugin_file === plugin_basename(__FILE__)) {
         $plugin_data['icons'] = array(
             //'2x'  => plugin_dir_url(__FILE__) . 'assets/icon-256x256.png', // muss ich erst erstellen
