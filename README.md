@@ -10,4 +10,5 @@ Suble Uptimez is a WordPress plugin that displays the uptime status of monitors 
 
 ## Usage
 You can use the following shortcode to display the monitor status on any page or post:
+
 [suble_uptimez_monitors]
