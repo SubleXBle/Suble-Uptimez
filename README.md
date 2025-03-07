@@ -1,5 +1,10 @@
 # Suble Uptimez
 
+**Version:** 1.0.0  
+**Author:** SubleXBle  
+**Plugin URI:** [https://suble.org/](https://suble.org/)  
+**License:** GPL2
+
 ## Description
 Suble Uptimez is a WordPress plugin that displays the uptime status of monitors using the Uptime Robot API.
 
