@@ -209,4 +209,4 @@ function suble_greetz_set_plugin_icon($plugin_data, $plugin_file) {
     }
     return $plugin_data;
 }
-add_filter('plugin_details_api_result', 'suble_greetz_set_plugin_icon', 10, 2);
+add_filter('plugin_details_api_result', 'suble_uptimez_set_plugin_icon', 10, 2);
