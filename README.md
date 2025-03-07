@@ -1,5 +1,7 @@
 # Suble Uptimez
 
+# BETA TEST
+
 **Version:** 1.0.0  
 **Author:** SubleXBle  
 **Plugin URI:** [https://suble.org/](https://suble.org/)  
