@@ -3,7 +3,7 @@
  * Plugin Name: Suble Uptimez
  * Plugin URI: https://suble.org
  * Description: Zeigt die Uptime-Status von Monitoren mithilfe des Uptime-Robots API.
- * Version: 1.0
+ * Version: 1.0.0
  * Author: SubleXBle
  * Author URI: https://suble.org
  */
