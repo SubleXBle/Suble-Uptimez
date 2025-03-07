@@ -15,3 +15,7 @@ You can use the following shortcode to display the monitor status on any page or
 
 ## Uninstall
 The Plugin has its uninstall routine, deaktivate and uninstall via wordpress so it will get triggered and can delete your api key from the wordpress database
+
+![Plugin-Bild](assets/screenshot-6.png)
+![Plugin-Bild](assets/screenshot-7.png)
+![Plugin-Bild](assets/screenshot-8.png)
