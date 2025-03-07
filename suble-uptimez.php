@@ -154,21 +154,29 @@ function suble_uptimez_monitors_shortcode() {
     }
 
     // Monitore anzeigen
-    $output = '<table>';
-    $output .= '<thead><tr><th>Monitor Name</th><th>Status</th></tr></thead>';
-    $output .= '<tbody>';
+$output = '<table>';
+$output .= '<thead><tr><th>Monitor Name</th><th>Status</th></tr></thead>';
+$output .= '<tbody>';
 
-    foreach ( $monitors_data->monitors as $monitor ) {
-        $status = ( $monitor->status == 2 ) ? 'Online' : 'Offline';
-        $output .= '<tr>';
-        $output .= '<td>' . esc_html( $monitor->friendly_name ) . '</td>';
-        $output .= '<td>' . esc_html( $status ) . '</td>';
-        $output .= '</tr>';
+foreach ( $monitors_data->monitors as $monitor ) {
+    // Status und Farbe festlegen
+    if ( $monitor->status == 2 ) {
+        $status = '<strong style="color: green;">Online</strong>'; // Grün für Online
+    } else {
+        $status = '<strong style="color: red;">Offline</strong>'; // Rot für Offline
     }
 
-    $output .= '</tbody>';
-    $output .= '</table>';
+    // Zeile in der Tabelle einfügen
+    $output .= '<tr>';
+    $output .= '<td>' . esc_html( $monitor->friendly_name ) . '</td>';
+    $output .= '<td>' . $status . '</td>';
+    $output .= '</tr>';
+}
 
-    return $output;
+$output .= '</tbody>';
+$output .= '</table>';
+
+return $output;
+
 }
 add_shortcode( 'suble_uptimez_monitors', 'suble_uptimez_monitors_shortcode' );
