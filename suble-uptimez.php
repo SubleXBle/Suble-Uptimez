@@ -204,7 +204,7 @@ function suble_greetz_set_plugin_icon($plugin_data, $plugin_file) {
             //'2x'  => plugin_dir_url(__FILE__) . 'assets/icon-256x256.png', // muss ich erst erstellen
             //'1x'  => plugin_dir_url(__FILE__) . 'assets/icon-128x128.png', // Kleines Icon
             //'svg' => plugin_dir_url(__FILE__) . 'assets/icon.svg', // hab noch kein SVG
-            //"default"=> plugin_dir_url(__FILE__) . 'assets/icon-128x128.png', // Kleines Icon
+            "default"=> plugin_dir_url(__FILE__) . 'assets/icon-128x128.png', // Kleines Icon
         );
     }
     return $plugin_data;
