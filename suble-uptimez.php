@@ -183,7 +183,7 @@ add_shortcode( 'suble_uptimez_monitors', 'suble_uptimez_monitors_shortcode' );
 
 // Plugin-Update-Checker
 // Sicherstellen, dass der Update-Checker vorhanden ist
-require plugin_dir_path(__FILE__) . 'plugin-update-checker/plugin-update-checker.php';
+require_once plugin_dir_path(__FILE__) . 'plugin-update-checker/plugin-update-checker.php';
 
 // Initialisierung mit der neuen Klassenstruktur
 use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
