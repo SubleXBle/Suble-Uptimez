@@ -6,6 +6,7 @@
  * Version: 1.0.0
  * Author: SubleXBle
  * Author URI: https://suble.org
+ * License: GPL2
  */
 
 // Verhindert direktes Laden der Datei
