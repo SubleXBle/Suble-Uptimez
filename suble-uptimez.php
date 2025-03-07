@@ -180,3 +180,33 @@ return $output;
 
 }
 add_shortcode( 'suble_uptimez_monitors', 'suble_uptimez_monitors_shortcode' );
+
+// Plugin-Update-Checker
+// Sicherstellen, dass der Update-Checker vorhanden ist
+require plugin_dir_path(__FILE__) . 'plugin-update-checker/plugin-update-checker.php';
+
+// Initialisierung mit der neuen Klassenstruktur
+use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
+
+$updateChecker = PucFactory::buildUpdateChecker(
+    'https://github.com/SubleXBle/Suble-Uptimez/',
+    __FILE__,
+    'suble-uptimez'
+);
+
+// richtige Branch setzen:
+$updateChecker->setBranch('latest');
+
+// Icon für Plugin einfügen
+function suble_greetz_set_plugin_icon($plugin_data, $plugin_file) {
+    if ($plugin_file === plugin_basename(__FILE__)) {
+        $plugin_data['icons'] = array(
+            //'2x'  => plugin_dir_url(__FILE__) . 'assets/icon-256x256.png', // muss ich erst erstellen
+            //'1x'  => plugin_dir_url(__FILE__) . 'assets/icon-128x128.png', // Kleines Icon
+            //'svg' => plugin_dir_url(__FILE__) . 'assets/icon.svg', // hab noch kein SVG
+            //"default"=> plugin_dir_url(__FILE__) . 'assets/icon-128x128.png', // Kleines Icon
+        );
+    }
+    return $plugin_data;
+}
+add_filter('plugin_details_api_result', 'suble_greetz_set_plugin_icon', 10, 2);
