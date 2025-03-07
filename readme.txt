@@ -1,14 +1,14 @@
 === Suble Uptimez ===
-Contributors: SubleXBle
-Tags: uptime, uptime-robot, monitor
-Requires at least: 5.0
-Tested up to: 7.2
-Stable tag: 1.0
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Contributors: SubleXBle  
+Tags: uptime, uptime-robot, shortcode  
+Requires at least: 5.0  
+Tested up to: 6.7  
+Stable tag: 1.0.0  
+License: GPLv2 or later  
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
-Zeigt die Uptime-Status von Monitoren mithilfe des Uptime-Robots API an.
+Zeigt die Uptime-Status von Monitoren mithilfe des Uptime-Robots API via Shortcode an.
 
 == Installation ==
 1. Lade das Plugin in den wp-content/plugins Ordner hoch.
@@ -19,5 +19,5 @@ Zeigt die Uptime-Status von Monitoren mithilfe des Uptime-Robots API an.
 Verwende den Shortcode `[suble_uptimez_monitors]` auf einer Seite oder einem Beitrag, um die Monitore anzuzeigen.
 
 == Changelog ==
-= 1.0 =
+= 1.0.0 =
 * Erste Version.
