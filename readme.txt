@@ -7,16 +7,16 @@ Stable tag: 1.0.0
 License: GPLv2 or later  
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
+Short Description: Zeigt den Uptime-Status von Monitoren mithilfe des Uptime-Robots API via Shortcode an.
+
 == Description ==
-Zeigt die Uptime-Status von Monitoren mithilfe des Uptime-Robots API via Shortcode an.
+Zeigt den Uptime-Status von Monitoren mithilfe des Uptime-Robots API via Shortcode an.
 
-== Installation ==
-1. Lade das Plugin in den wp-content/plugins Ordner hoch.
-2. Aktiviere das Plugin über das WordPress-Admin-Panel.
-3. Gehe zu "Suble Uptimez" und gib deinen Uptime-Robot API-Schlüssel ein.
+== Screenshots ==
+![Einstellungen](assets/screenshot-6.png)
 
-== Usage ==
-Verwende den Shortcode `[suble_uptimez_monitors]` auf einer Seite oder einem Beitrag, um die Monitore anzuzeigen.
+== Assets ==
+Icon : assets/icon-128x128.png
 
 == Changelog ==
 = 1.0.0 =
