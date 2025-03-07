@@ -12,8 +12,6 @@
 if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
-// Include Tracking
-include_once plugin_dir_path(__FILE__) . 'tracking.php';
 
 // Include für die API-Schlüssel-Verwaltung
 require_once plugin_dir_path( __FILE__ ) . 'api-key-handling.php';
