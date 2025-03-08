@@ -1,6 +1,6 @@
 # Suble Uptimez
 
-# BETA TEST
+# BETA
 
 **Version:** 1.0.0  
 **Author:** SubleXBle  
